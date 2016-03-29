@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SpaceInvaders.Observer">
+    <Position X="6.75" Y="4.25" Width="1.5" />
+    <Members>
+      <Method Name="Execute" Hidden="true" />
+      <Method Name="getGroup" Hidden="true" />
+      <Method Name="setGroup" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAABAEEAABAAAAAA=</HashCode>
+      <FileName>Observer\Observer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.DeleteAlienObs">
+    <Position X="5.5" Y="6.75" Width="1.5" />
+    <Members>
+      <Method Name="DeleteAlienObs" Hidden="true" />
+      <Method Name="Execute" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAABAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Observer\DeleteAlienObs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.DeleteMissileObs">
+    <Position X="8.25" Y="6.75" Width="1.5" />
+    <Members>
+      <Method Name="DeleteMissileObs" Hidden="true" />
+      <Method Name="Execute" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAQAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Observer\DeleteMissileObs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.CollisionGroup">
+    <Position X="3.75" Y="4.25" Width="1.5" />
+    <Members>
+      <Method Name="CollisionGroup" Hidden="true" />
+      <Method Name="getObjA" Hidden="true" />
+      <Method Name="getObjB" Hidden="true" />
+      <Method Name="getRootObserver" Hidden="true" />
+      <Field Name="ObjA" Hidden="true" />
+      <Field Name="ObjB" Hidden="true" />
+      <Method Name="setObjA" Hidden="true" />
+      <Method Name="setObjB" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAgAEAAQAIsAAAAAAAAAABIAAA=</HashCode>
+      <FileName>Observer\CollisionGroup.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="root" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.CollisionPair">
+    <Position X="3.5" Y="1.75" Width="1.5" />
+    <Members>
+      <Method Name="checkForCollision" Hidden="true" />
+      <Method Name="CollisionPair" Hidden="true" />
+      <Method Name="getName" Hidden="true" />
+      <Method Name="process" Hidden="true" />
+      <Method Name="set" Hidden="true" />
+      <Method Name="updateCollisionGroup" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="SpaceInvaders.CollisionPair.Name" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Models\Collision\CollisionPair.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAABAAAQAAgICAAAEAAAQCAAFAAAAAAA=</HashCode>
+      <FileName>Models\Collision\CollisionPair.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="collisionGroup" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.CollisionPairManager">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <Members>
+      <Method Name="CollisionPairManager" Hidden="true" />
+      <Method Name="Compare" Hidden="true" />
+      <Method Name="CreateNode" Hidden="true" />
+      <Method Name="getCurrentCollisionPair" Hidden="true" />
+      <Method Name="getInstance" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAABAAAAAAAgEAAAgAAAAAAEQAQABCAAAAAAA=</HashCode>
+      <FileName>Managers\CollisionPairManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="currentPair" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

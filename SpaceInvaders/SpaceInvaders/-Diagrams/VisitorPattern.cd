@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SpaceInvaders.Visitor">
+    <Position X="6.75" Y="1.25" Width="1.5" />
+    <Members>
+      <Method Name="visitAlien" Hidden="true" />
+      <Method Name="visitBomb" Hidden="true" />
+      <Method Name="visitBombRoot" Hidden="true" />
+      <Method Name="visitBottomWall" Hidden="true" />
+      <Method Name="visitColumn" Hidden="true" />
+      <Method Name="visitDagger" Hidden="true" />
+      <Method Name="visitGrid" Hidden="true" />
+      <Method Name="visitLeftWall" Hidden="true" />
+      <Method Name="visitMissile" Hidden="true" />
+      <Method Name="visitMissileRoot" Hidden="true" />
+      <Method Name="visitMothership" Hidden="true" />
+      <Method Name="visitMothershipRoot" Hidden="true" />
+      <Method Name="visitRightWall" Hidden="true" />
+      <Method Name="visitShieldBrick" Hidden="true" />
+      <Method Name="visitShieldColumn" Hidden="true" />
+      <Method Name="visitShieldRoot" Hidden="true" />
+      <Method Name="visitShip" Hidden="true" />
+      <Method Name="visitShipRoot" Hidden="true" />
+      <Method Name="visitTopWall" Hidden="true" />
+      <Method Name="visitUFO" Hidden="true" />
+      <Method Name="visitWallRoot" Hidden="true" />
+      <Method Name="visitZigZag" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AoAAABABCAAIAAgEEABIAASAIIAACAAQAIAAIIAEAIA=</HashCode>
+      <FileName>Abstract\Visitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObject">
+    <Position X="6.75" Y="4" Width="1.5" />
+    <Members>
+      <Method Name="attachSprite" Hidden="true" />
+      <Field Name="collisionObj" Hidden="true" />
+      <Method Name="GameObject" Hidden="true" />
+      <Method Name="getIndex" Hidden="true" />
+      <Method Name="getName" Hidden="true" />
+      <Field Name="index" Hidden="true" />
+      <Field Name="isDead" Hidden="true" />
+      <Field Name="proxySprite" Hidden="true" />
+      <Method Name="Remove" Hidden="true" />
+      <Method Name="Render" Hidden="true" />
+      <Method Name="Set" Hidden="true" />
+      <Method Name="turnOFFCollisionBox" Hidden="true" />
+      <Method Name="turnONCollisionBox" Hidden="true" />
+      <Field Name="x" Hidden="true" />
+      <Field Name="y" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Enum Name="SpaceInvaders.GameObject.Name" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Models\GameObject.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAQABAAAAAEABAAAACIAFAAAABAEAAQIABBkCAABAAA=</HashCode>
+      <FileName>Models\GameObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Alien" Collapsed="true">
+    <Position X="3.75" Y="6.75" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="SpaceInvaders.Alien.Type" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Abstract\Alien.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AACAAAAAABAAAAAAAAAAAAAgAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Abstract\Alien.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.MissileType" Collapsed="true">
+    <Position X="9.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Models\Missile\MissileType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Crab">
+    <Position X="2.75" Y="8" Width="1.5" />
+    <Members>
+      <Method Name="Crab" Hidden="true" />
+      <Method Name="Remove" Hidden="true" />
+      <Method Name="Update" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIQAAAAAAAAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Aliens\Crab.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Grid">
+    <Position X="4.5" Y="8" Width="1.5" />
+    <Members>
+      <Method Name="ChangeDirection" Hidden="true" />
+      <Method Name="Grid" Hidden="true" />
+      <Method Name="MoveGrid" Hidden="true" />
+      <Method Name="Remove" Hidden="true" />
+      <Method Name="selectGrid" Hidden="true" />
+      <Method Name="traverseTreeX" Hidden="true" />
+      <Method Name="traverseTreeY" Hidden="true" />
+      <Method Name="Update" Hidden="true" />
+      <Method Name="updateTree" Hidden="true" />
+      <Method Name="visitBottomWall" Hidden="true" />
+      <Method Name="visitLeftWall" Hidden="true" />
+      <Method Name="visitRightWall" Hidden="true" />
+      <Method Name="visitShieldBrick" Hidden="true" />
+      <Method Name="visitShieldColumn" Hidden="true" />
+      <Method Name="visitShieldRoot" Hidden="true" />
+      <Method Name="visitWallRoot" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>BoUAABgAAAAIAAoAEQAIBCCAEAAECCATBEAAAFAAAIA=</HashCode>
+      <FileName>Models\Aliens\Grid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Octo">
+    <Position X="6.25" Y="8" Width="1.5" />
+    <Members>
+      <Method Name="Octo" Hidden="true" />
+      <Method Name="Remove" Hidden="true" />
+      <Method Name="Update" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIQAAAAAAAAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Aliens\Octo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Squid">
+    <Position X="1" Y="8" Width="1.5" />
+    <Members>
+      <Method Name="Remove" Hidden="true" />
+      <Method Name="Squid" Hidden="true" />
+      <Method Name="Update" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIQAAAAAAAAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Aliens\Squid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Missile">
+    <Position X="8.5" Y="8" Width="1.5" />
+    <Members>
+      <Method Name="Missile" Hidden="true" />
+      <Method Name="Remove" Hidden="true" />
+      <Method Name="setIsAlive" Hidden="true" />
+      <Method Name="Update" Hidden="true" />
+      <Method Name="updateLocation" Hidden="true" />
+      <Method Name="visitBomb" Hidden="true" />
+      <Method Name="visitBombRoot" Hidden="true" />
+      <Method Name="visitMothership" Hidden="true" />
+      <Method Name="visitMothershipRoot" Hidden="true" />
+      <Method Name="visitShieldBrick" Hidden="true" />
+      <Method Name="visitShieldColumn" Hidden="true" />
+      <Method Name="visitShieldRoot" Hidden="true" />
+      <Method Name="visitTopWall" Hidden="true" />
+      <Method Name="visitWallRoot" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIQAABABAAAAAAgAAABIBQSAIAAACgAAAAAAIEEAAAA=</HashCode>
+      <FileName>Models\GameObjects\Missile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.MissileRoot">
+    <Position X="10.75" Y="8" Width="1.5" />
+    <Members>
+      <Method Name="MissileRoot" Hidden="true" />
+      <Method Name="Update" Hidden="true" />
+      <Method Name="visitBomb" Hidden="true" />
+      <Method Name="visitBombRoot" Hidden="true" />
+      <Method Name="visitMothership" Hidden="true" />
+      <Method Name="visitMothershipRoot" Hidden="true" />
+      <Method Name="visitShieldBrick" Hidden="true" />
+      <Method Name="visitShieldColumn" Hidden="true" />
+      <Method Name="visitShieldRoot" Hidden="true" />
+      <Method Name="visitTopWall" Hidden="true" />
+      <Method Name="visitWallRoot" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIQAABABAAAAAAgAAABIAASAIAAACAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Models\GameObjects\MissileRoot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

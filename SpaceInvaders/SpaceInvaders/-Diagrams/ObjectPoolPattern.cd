@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SpaceInvaders.GameObjectManager">
+    <Position X="3" Y="3.25" Width="1.5" />
+    <Members>
+      <Method Name="Compare" Hidden="true" />
+      <Method Name="GameObjectManager" Hidden="true" />
+      <Method Name="getTree" Hidden="true" />
+      <Method Name="Sort" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAgAAAAAERBAAAAIAIIEQAIABCAAAAAAA=</HashCode>
+      <FileName>Managers\GameObjectManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Manager">
+    <Position X="3" Y="0.75" Width="1.5" />
+    <Members>
+      <Method Name="baseAddSorted" Hidden="true" />
+      <Method Name="baseCreateNoAdd" Hidden="true" />
+      <Method Name="Compare" Hidden="true" />
+      <Method Name="CreateNode" Hidden="true" />
+      <Method Name="hiddenAddToActive" Hidden="true" />
+      <Method Name="hiddenAddToFront" Hidden="true" />
+      <Method Name="hiddenAddToListSorted" Hidden="true" />
+      <Method Name="hiddenAddToReserve" Hidden="true" />
+      <Method Name="hiddenFillReservedPool" Hidden="true" />
+      <Method Name="hiddenPullFromActive" Hidden="true" />
+      <Method Name="hiddenPullFromFront" Hidden="true" />
+      <Method Name="hiddenPullFromReserve" Hidden="true" />
+      <Method Name="hiddenRemoveFromActive" Hidden="true" />
+      <Method Name="hiddenRemoveFromReserve" Hidden="true" />
+      <Method Name="hiddenRemoveNode" Hidden="true" />
+      <Method Name="Manager" Hidden="true" />
+      <Field Name="mGrowthRate" Hidden="true" />
+      <Field Name="mNumInActive" Hidden="true" />
+      <Field Name="mNumInReserve" Hidden="true" />
+      <Field Name="mTotalNodes" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>EFkICYEgAAAAAACAgAEQAgAAQAgBAACgQABAAABAAAA=</HashCode>
+      <FileName>Abstract\Manager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pActive" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.DLink">
+    <Position X="6" Y="0.75" Width="1.5" />
+    <Members>
+      <Method Name="clear" Hidden="true" />
+      <Method Name="DLink" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Enum Name="SpaceInvaders.DLink.Status" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Abstract\DLink.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AEQAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Abstract\DLink.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjectNode">
+    <Position X="6" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAgAAAAAAAAAAEAAAAAgAMAAAAAAA=</HashCode>
+      <FileName>Models\GameObjectNode.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="gameObject" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.GameObject" Collapsed="true">
+    <Position X="9" Y="3" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="SpaceInvaders.GameObject.Name" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Models\GameObject.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAQABAAAAAEABAAAACIAFAAAABAEAAQIABBkCAABAAA=</HashCode>
+      <FileName>Models\GameObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
